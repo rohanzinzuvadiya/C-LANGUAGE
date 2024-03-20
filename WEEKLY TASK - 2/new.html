@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>/* styles.css */
+    .carousel {
+        width: 500px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-item {
+        width: 100%;
+        padding:20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    .carousel-prev,
+    .carousel-next {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ddd;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    
+    .active {
+        transform: translateX(0);
+    }
+    
+    .prev {
+        transform: translateX(-100%);
+    }
+    
+    .next {
+        transform: translateX(100%);
+    }</style>
+<body>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p>"Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. "</p>
+                <p>James Anderson, Facebook, Product Lead</p>
+            </div>
+            <div class="carousel-item">
+                <p>"Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. "</p>
+                <p>James Anderson, Facebook, Product Lead</p>
+            </div>
+        </div>
+        <button class="carousel-prev">Previous</button>
+        <button class="carousel-next">Next</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+<script>
+    // scripts.js
+const carousel = document.querySelector('.carousel-inner');
+const prevBtn = document.querySelector('.carousel-prev');
+const nextBtn = document.querySelector('.carousel-next');
+
+let currentIndex = 0;
+
+function moveToNext() {
+    currentIndex++;
+    if (currentIndex >= carousel.children.length) {
+        currentIndex = 0;
+    }
+    updateCarousel();
+}
+
+function moveToPrev() {
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = carousel.children.length - 1;
+    }
+    updateCarousel();
+}
+
+function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+nextBtn.addEventListener('click', moveToNext);
+prevBtn.addEventListener('click', moveToPrev);
+
+// Automatically move to the next slide every 5 seconds
+setInterval(moveToNext, 5000);
+</script>

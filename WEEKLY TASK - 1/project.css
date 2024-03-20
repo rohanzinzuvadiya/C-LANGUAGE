@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.sec1{
+    height: 100vh;
+    /* width: 100vw; */
+    /* border: 2px solid red; */
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)) ,url(https://preview.colorlib.com/theme/construction/img/header-bg.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+width: 100%;
+/* border: 1px solid ; */
+color: white;
+/* position: fixed; */
+top: 0px;
+backdrop-filter: blur(10px);
+}
+.bt1{
+    height: 45px;
+    width: 185px;
+    border-radius: 25px;
+    border: none;
+    background-color:#fab700;
+    color: white;
+}
+.bt1:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    transition-duration: 0.5s;
+}
+.sec2{
+    height: 100%;
+    width: 100%;
+    background-color:aliceblue;
+}
+.sec2:hover{
+    background-color:#fab700;
+    transition-duration: 0.5s;
+}
+.s21{
+    height: 620px;
+    background-image: url(https://preview.colorlib.com/theme/construction/img/p1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.s22{
+    height: 620px;
+    background-image: url(https://preview.colorlib.com/theme/construction/img/p2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.s23{
+    height: 620px;
+    background-image: url(https://preview.colorlib.com/theme/construction/img/p3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.s24{
+    height: 620px;
+    background-image: url(https://preview.colorlib.com/theme/construction/img/p4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.yel{
+    height: 0%;
+    width:100%;
+    background: linear-gradient(#FAB700,#FAB700);
+    opacity: 0;
+    display: block;
+    position: relative;
+    top: -50px;
+    transition: height linear 0.3s;
+}
+.d1:hover .yel{
+    height: 100%;
+    opacity: 0.8;
+}
+.counter{
+    height: 200px;
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 3% ;
+}
+.count {
+  width: 150px;
+  height: 150px;
+  border:0px solid ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 45px;
+  font-family: verdana;
+  float: left;
+  margin-left: 50px;
+}
+.box1{
+    color: black;
+    font-size: 15px;
+    background-color: #f9f9ff;
+}
+.box1:hover{
+    background-color: #FAB700;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 12px 28px 0px, rgba(0, 0, 0, 0.5) 0px 2px 4px 0px, rgba(255, 255, 255, 0.5) 0px 0px 0px inset;
+    transition-duration: 0.5s;
+}
+.sec4{
+    /* height: 350px; */
+    border: 1px solid ;
+    background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("https://preview.colorlib.com/theme/construction/img/testimonial-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}    
+.bt2{
+    height: 45px;
+    width: 200px;
+    border-radius: 25px;
+    background-color: #FAB700;
+    border: none;
+    color: white;
+}
+#a1{
+    padding-left: 10px;
+}
+.bt2:hover #a1{
+    position: relative;
+    left: 10px;
+    transition-duration: 0.5s;
+}
+#l1:hover{
+    color: #FAB700;
+}

@@ -1,0 +1,57 @@
+.s1{
+    height: 800px;
+ 
+    background-image: url(https://preview.colorlib.com/theme/chariter/assets/img/hero/h1_hero3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.s2{
+    height: 500px;
+ 
+
+}
+.s3{
+    height: 250px;
+
+
+}
+.s4{
+    height: 250px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-radius: 0px 0px 20px 20px;
+
+}
+.s6{
+    background-color: #ffffff;
+}
+.s10{
+    height: 600px;
+
+}
+.s11{
+    height: auto;
+    background-color: #fcf8f9;
+}
+.s15{
+    height: auto;
+    background-image: url(
+        https://preview.colorlib.com/theme/chariter/assets/img/gallery/section-bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.s16{
+    height: auto;
+    background-color: white;
+    border-radius: 30px;
+    padding: 50px;
+}
+.s21{
+    background-color: #301a22;
+}
+.s30{
+    background-color: white;
+    border-radius: 20px;
+
+}
